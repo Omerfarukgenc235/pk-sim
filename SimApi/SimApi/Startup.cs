@@ -1,4 +1,6 @@
-﻿using Serilog;
+﻿using Hangfire;
+using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using SimApi.Base;
 using SimApi.Data.Uow;
 using SimApi.Service.Middleware;
@@ -23,6 +25,16 @@ public class Startup
         JwtConfig = Configuration.GetSection("JwtConfig").Get<JwtConfig>();
         services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
 
+        services.AddControllersWithViews(options =>
+        options.CacheProfiles.Add(ResponseCasheType.Minute45, new CacheProfile
+        {
+            Duration = 45 * 60,
+            NoStore = false,
+            Location = ResponseCacheLocation.Any
+        }));
+        services.AddResponseCompression();
+        services.AddMemoryCache();
+        services.AddRedisExtension(Configuration);
         services.AddCustomSwaggerExtension();
         services.AddDbContextExtension(Configuration);
         services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -30,6 +42,8 @@ public class Startup
         services.AddRepositoryExtension();
         services.AddServiceExtension();
         services.AddJwtExtension();
+        services.AddHangfireExtension(Configuration);
+
 
     }
 
@@ -53,6 +67,7 @@ public class Startup
         //DI
         app.AddExceptionHandler();
         app.AddDIExtension();
+        app.UseHangfireDashboard();
 
         app.UseMiddleware<HeartBeatMiddleware>();
         app.UseMiddleware<ErrorHandlerMiddleware>();

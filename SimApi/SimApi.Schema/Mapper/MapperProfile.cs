@@ -24,6 +24,13 @@ public class MapperProfile : Profile
 
         CreateMap<Transaction, TransactionResponse>();
         CreateMap<TransactionView, TransactionViewResponse>();
+
+        CreateMap<UserLogRequest, UserLog>();
+        CreateMap<UserLog, UserLogResponse>();
+
+        CreateMap<CurrencyRequest, Currency>();
+        CreateMap<Currency, CurrencyResponse>();
+
     }
 
 

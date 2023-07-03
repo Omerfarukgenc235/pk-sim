@@ -1,0 +1,1584 @@
+2023-06-11 09:32:07.977 [INF] Application is starting...
+2023-06-11 09:32:53.638 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 09:32:53.653 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 09:32:53.656 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 09:33:35.226 [FTL] Path=/simapi/v1/UserLogs || Method=GET || Exception=It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2023-06-11 09:33:35.273 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id b0560ec1-febb-4037-b921-a9b5c6a2c4ca and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-11 09:33:35.341 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id b0560ec1-febb-4037-b921-a9b5c6a2c4ca and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-11 09:33:35.352 [ERR] Connection id "0HMRA8MB4M5H1", Request id "0HMRA8MB4M5H1:00000009": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id b0560ec1-febb-4037-b921-a9b5c6a2c4ca and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-06-11 09:33:41.359 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 09:33:41.361 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 09:33:41.362 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 09:34:16.101 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 09:34:16.106 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 09:34:46.347 [INF] -------------Request-Begin------------
+2023-06-11 09:34:46.349 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+Request Body: 
+2023-06-11 09:34:46.350 [INF] 
+
+2023-06-11 09:34:46.351 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"string","transactionDate":"2023-05-21T07:58:46.377331Z","logType":"InValidUserStatus","id":1},{"userName":"string","transactionDate":"2023-06-04T06:24:34.716154Z","logType":"InValidUserStatus","id":2},{"userName":"string","transactionDate":"2023-06-04T06:25:23.433463Z","logType":"InValidUserStatus","id":3},{"userName":"string","transactionDate":"2023-06-04T06:27:07.24588Z","logType":"InValidUserStatus","id":4},{"userName":"string","transactionDate":"2023-06-04T06:27:23.061066Z","logType":"InValidUserStatus","id":5},{"userName":"string","transactionDate":"2023-06-04T06:28:26.533299Z","logType":"InValidUserStatus","id":6},{"userName":"string","transactionDate":"2023-06-04T06:28:44.950639Z","logType":"InValidUserStatus","id":7}]}
+2023-06-11 09:34:46.354 [INF] -------------Request-End------------
+2023-06-11 09:34:50.771 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 09:34:50.773 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 09:34:50.774 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 09:35:21.724 [INF] -------------Request-Begin------------
+2023-06-11 09:35:21.730 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+Request Body: 
+2023-06-11 09:35:21.732 [INF] 
+
+2023-06-11 09:35:21.733 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"string","transactionDate":"2023-05-21T07:58:46.377331Z","logType":"InValidUserStatus","id":1},{"userName":"string","transactionDate":"2023-06-04T06:24:34.716154Z","logType":"InValidUserStatus","id":2},{"userName":"string","transactionDate":"2023-06-04T06:25:23.433463Z","logType":"InValidUserStatus","id":3},{"userName":"string","transactionDate":"2023-06-04T06:27:07.24588Z","logType":"InValidUserStatus","id":4},{"userName":"string","transactionDate":"2023-06-04T06:27:23.061066Z","logType":"InValidUserStatus","id":5},{"userName":"string","transactionDate":"2023-06-04T06:28:26.533299Z","logType":"InValidUserStatus","id":6},{"userName":"string","transactionDate":"2023-06-04T06:28:44.950639Z","logType":"InValidUserStatus","id":7}]}
+2023-06-11 09:35:21.737 [INF] -------------Request-End------------
+2023-06-11 09:35:34.623 [INF] Application is starting...
+2023-06-11 09:35:54.130 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 09:35:54.136 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 09:35:54.139 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 09:36:07.514 [INF] -------------Request-Begin------------
+2023-06-11 09:36:07.515 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+Request Body: 
+2023-06-11 09:36:07.516 [INF] 
+
+2023-06-11 09:36:07.517 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"string","transactionDate":"2023-05-21T07:58:46.377331Z","logType":"InValidUserStatus","id":1},{"userName":"string","transactionDate":"2023-06-04T06:24:34.716154Z","logType":"InValidUserStatus","id":2},{"userName":"string","transactionDate":"2023-06-04T06:25:23.433463Z","logType":"InValidUserStatus","id":3},{"userName":"string","transactionDate":"2023-06-04T06:27:07.24588Z","logType":"InValidUserStatus","id":4},{"userName":"string","transactionDate":"2023-06-04T06:27:23.061066Z","logType":"InValidUserStatus","id":5},{"userName":"string","transactionDate":"2023-06-04T06:28:26.533299Z","logType":"InValidUserStatus","id":6},{"userName":"string","transactionDate":"2023-06-04T06:28:44.950639Z","logType":"InValidUserStatus","id":7}]}
+2023-06-11 09:36:07.520 [INF] -------------Request-End------------
+2023-06-11 09:36:20.096 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 09:36:20.099 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 09:36:20.101 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 09:37:04.194 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 09:37:04.213 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 09:37:13.955 [INF] -------------Request-Begin------------
+2023-06-11 09:37:13.958 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+Request Body: 
+2023-06-11 09:37:13.967 [INF] 
+
+2023-06-11 09:37:13.969 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs 
+QueryString: ?username=string 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userName":"string","transactionDate":"2023-05-21T07:58:46.377331Z","logType":"InValidUserStatus","id":1},{"userName":"string","transactionDate":"2023-06-04T06:24:34.716154Z","logType":"InValidUserStatus","id":2},{"userName":"string","transactionDate":"2023-06-04T06:25:23.433463Z","logType":"InValidUserStatus","id":3},{"userName":"string","transactionDate":"2023-06-04T06:27:07.24588Z","logType":"InValidUserStatus","id":4},{"userName":"string","transactionDate":"2023-06-04T06:27:23.061066Z","logType":"InValidUserStatus","id":5},{"userName":"string","transactionDate":"2023-06-04T06:28:26.533299Z","logType":"InValidUserStatus","id":6},{"userName":"string","transactionDate":"2023-06-04T06:28:44.950639Z","logType":"InValidUserStatus","id":7}]}
+2023-06-11 09:37:13.978 [INF] -------------Request-End------------
+2023-06-11 09:37:27.400 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 09:37:27.401 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 09:37:27.403 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 09:37:37.365 [INF] -------------Request-Begin------------
+2023-06-11 09:37:37.370 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs/InvalidateCache 
+QueryString: ?username=string 
+Request Body: 
+2023-06-11 09:37:37.374 [INF] 
+
+2023-06-11 09:37:37.375 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/UserLogs/InvalidateCache 
+QueryString: ?username=string 
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 09:37:37.377 [INF] -------------Request-End------------
+2023-06-11 10:55:47.015 [INF] Application is starting...
+2023-06-11 10:56:22.191 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 10:56:22.209 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 10:56:22.212 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 10:58:38.361 [FTL] Path=/simapi/v1/Cashe/Flush || Method=PUT || Exception=This operation is not available unless admin mode is enabled: FLUSHALL
+2023-06-11 10:58:38.418 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e2b5fe74-cae1-406f-9fb7-39b58c9a8cff and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-11 10:58:38.496 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e2b5fe74-cae1-406f-9fb7-39b58c9a8cff and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-11 10:58:38.511 [ERR] Connection id "0HMRAA540DKLH", Request id "0HMRAA540DKLH:00000009": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e2b5fe74-cae1-406f-9fb7-39b58c9a8cff and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\RepoRy\pk-sim\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-06-11 10:58:45.018 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 10:58:45.019 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 10:58:45.021 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 10:58:57.885 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 10:58:57.888 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 10:58:59.104 [ERR] Failed executing DbCommand (95ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Code", c."CreatedAt", c."CreatedBy", c."IsActive", c."Name", c."Symbol", c."UpdatedAt", c."UpdatedBy"
+FROM dbo."Currency" AS c
+2023-06-11 10:58:59.151 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+2023-06-11 10:58:59.212 [ERR] GetAll Exception
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SimApi.Data.Repository.GenericRepository`1.GetAllAsNoTracking() in C:\RepoRy\pk-sim\SimApi\SimApi.Data\Repository\Base\GenericRepository.cs:line 34
+   at SimApi.Operation.BaseService`3.GetAll() in C:\RepoRy\pk-sim\SimApi\SimApi.Operation\Base\BaseService.cs:line 45
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+2023-06-11 10:58:59.495 [INF] -------------Request-Begin------------
+2023-06-11 10:58:59.497 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/CurrencyCashe 
+QueryString:  
+Request Body: 
+2023-06-11 10:58:59.498 [INF] 
+
+2023-06-11 10:58:59.500 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/CurrencyCashe 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":false}
+2023-06-11 10:58:59.501 [INF] -------------Request-End------------
+2023-06-11 10:59:03.574 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 10:59:03.575 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 10:59:03.577 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 10:59:05.983 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Code", c."CreatedAt", c."CreatedBy", c."IsActive", c."Name", c."Symbol", c."UpdatedAt", c."UpdatedBy"
+FROM dbo."Currency" AS c
+2023-06-11 10:59:05.987 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+2023-06-11 10:59:06.034 [ERR] GetAll Exception
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SimApi.Data.Repository.GenericRepository`1.GetAllAsNoTracking() in C:\RepoRy\pk-sim\SimApi\SimApi.Data\Repository\Base\GenericRepository.cs:line 34
+   at SimApi.Operation.BaseService`3.GetAll() in C:\RepoRy\pk-sim\SimApi\SimApi.Operation\Base\BaseService.cs:line 45
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+2023-06-11 10:59:22.467 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Code", c."CreatedAt", c."CreatedBy", c."IsActive", c."Name", c."Symbol", c."UpdatedAt", c."UpdatedBy"
+FROM dbo."Currency" AS c
+2023-06-11 10:59:22.470 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+2023-06-11 10:59:29.564 [ERR] GetAll Exception
+Npgsql.PostgresException (0x80004005): 42703: column c.IsActive does not exist
+
+POSITION: 56
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SimApi.Data.Repository.GenericRepository`1.GetAllAsNoTracking() in C:\RepoRy\pk-sim\SimApi\SimApi.Data\Repository\Base\GenericRepository.cs:line 34
+   at SimApi.Operation.BaseService`3.GetAll() in C:\RepoRy\pk-sim\SimApi\SimApi.Operation\Base\BaseService.cs:line 45
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column c.IsActive does not exist
+    Position: 56
+    File: parse_relation.c
+    Line: 3611
+    Routine: errorMissingColumn
+2023-06-11 11:09:51.511 [INF] Application is starting...
+2023-06-11 11:10:04.020 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:10:04.025 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:10:04.027 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:10:13.921 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:10:13.935 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:10:46.376 [INF] -------------Request-Begin------------
+2023-06-11 11:10:46.377 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/CurrencyCashe 
+QueryString:  
+Request Body: 
+2023-06-11 11:10:46.378 [INF] 
+
+2023-06-11 11:10:46.379 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/CurrencyCashe 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":false}
+2023-06-11 11:10:46.380 [INF] -------------Request-End------------
+2023-06-11 11:11:01.068 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:11:01.070 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:11:01.071 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:11:01.136 [INF] -------------Request-Begin------------
+2023-06-11 11:11:01.137 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/UserLogCashe 
+QueryString:  
+Request Body: 
+2023-06-11 11:11:01.140 [INF] 
+
+2023-06-11 11:11:01.142 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/UserLogCashe 
+QueryString:  
+StatusCode: 400 
+Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-515b751042d47f1b276404cfa93e7e62-59776decf7df4370-00","errors":{"username":["The username field is required."]}}
+2023-06-11 11:11:01.144 [INF] -------------Request-End------------
+2023-06-11 11:11:14.889 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "PUT simapi/v1/Cashe/UserLogCashe" for actions - SimApi.Service.Controllers.CasheController.UserLogCashe (SimApi.Service),SimApi.Service.Controllers.CasheController.UserLogCashe (SimApi.Service). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-11 11:11:17.636 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "PUT simapi/v1/Cashe/UserLogCashe" for actions - SimApi.Service.Controllers.CasheController.UserLogCashe (SimApi.Service),SimApi.Service.Controllers.CasheController.UserLogCashe (SimApi.Service). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-11 11:11:30.375 [INF] Application is starting...
+2023-06-11 11:11:42.228 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:11:42.233 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:11:42.236 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:11:49.397 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:11:49.407 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:11:57.290 [INF] -------------Request-Begin------------
+2023-06-11 11:11:57.292 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/UserLogCashe 
+QueryString:  
+Request Body: 
+2023-06-11 11:11:57.292 [INF] 
+
+2023-06-11 11:11:57.293 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Cashe/UserLogCashe 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":false}
+2023-06-11 11:11:57.295 [INF] -------------Request-End------------
+2023-06-11 11:12:31.143 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:12:31.145 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:12:31.146 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:12:34.549 [ERR] Failed executing DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?', @p5='?', @p6='?' (DbType = DateTime), @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO dbo."Customer" ("CreatedAt", "CreatedBy", "CustomerNumber", "DateOfBirth", "FirstName", "LastName", "UpdatedAt", "UpdatedBy")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Id", "IsValid";
+2023-06-11 11:12:34.613 [ERR] An exception occurred in the database while saving changes for context type 'SimApi.Data.Context.SimEfDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidCastException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateAndGetLength(DateTime value, NpgsqlParameter parameter)
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateObjectAndGetLength(Object value, NpgsqlLengthCache& lengthCache, NpgsqlParameter parameter)
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ValidateAndBind(ConnectorTypeMapper typeMapper)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidCastException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateAndGetLength(DateTime value, NpgsqlParameter parameter)
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateObjectAndGetLength(Object value, NpgsqlLengthCache& lengthCache, NpgsqlParameter parameter)
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ValidateAndBind(ConnectorTypeMapper typeMapper)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-11 11:12:43.911 [ERR] Insert Exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidCastException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateAndGetLength(DateTime value, NpgsqlParameter parameter)
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateObjectAndGetLength(Object value, NpgsqlLengthCache& lengthCache, NpgsqlParameter parameter)
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ValidateAndBind(ConnectorTypeMapper typeMapper)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SimApi.Data.Uow.UnitOfWork.Complete() in C:\RepoRy\pk-sim\SimApi\SimApi.Data\UnitOfWork\UnitOfWork.cs:line 39
+   at SimApi.Operation.BaseService`3.Insert(TRequest request) in C:\RepoRy\pk-sim\SimApi\SimApi.Operation\Base\BaseService.cs:line 86
+2023-06-11 11:12:43.950 [INF] -------------Request-Begin------------
+2023-06-11 11:12:43.951 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"2023-06-11"}
+2023-06-11 11:12:43.953 [INF] 
+
+2023-06-11 11:12:43.954 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes. See the inner exception for details."}
+2023-06-11 11:12:43.956 [INF] -------------Request-End------------
+2023-06-11 11:13:00.049 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:13:00.051 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:13:00.051 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:13:00.081 [INF] -------------Request-Begin------------
+2023-06-11 11:13:00.083 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"2023-05-21 10:58:46.377331+03"}
+2023-06-11 11:13:00.084 [INF] 
+
+2023-06-11 11:13:00.085 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 400 
+Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-d7761793e11f424e8c2ebcf191362e15-486447c5be98df3e-00","errors":{"request":["The request field is required."],"$.dateOfBirth":["The JSON value could not be converted to System.DateTime. Path: $.dateOfBirth | LineNumber: 0 | BytePositionInLine: 108."]}
+2023-06-11 11:13:00.087 [INF] -------------Request-End------------
+2023-06-11 11:13:14.843 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:13:14.845 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:13:14.846 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:13:14.852 [INF] -------------Request-Begin------------
+2023-06-11 11:13:14.853 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"2023-05-21 10:58:46"}
+2023-06-11 11:13:14.855 [INF] 
+
+2023-06-11 11:13:14.857 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 400 
+Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-5f851a127cbbaa3deb4f83cdf07d6f89-7963863efe1d3f86-00","errors":{"request":["The request field is required."],"$.dateOfBirth":["The JSON value could not be converted to System.DateTime. Path: $.dateOfBirth | LineNumber: 0 | BytePositionInLine: 98."]}
+2023-06-11 11:13:14.859 [INF] -------------Request-End------------
+2023-06-11 11:13:24.017 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:13:24.018 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:13:24.019 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:13:24.039 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?', @p5='?', @p6='?' (DbType = DateTime), @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO dbo."Customer" ("CreatedAt", "CreatedBy", "CustomerNumber", "DateOfBirth", "FirstName", "LastName", "UpdatedAt", "UpdatedBy")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Id", "IsValid";
+2023-06-11 11:13:24.046 [ERR] An exception occurred in the database while saving changes for context type 'SimApi.Data.Context.SimEfDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidCastException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateAndGetLength(DateTime value, NpgsqlParameter parameter)
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateObjectAndGetLength(Object value, NpgsqlLengthCache& lengthCache, NpgsqlParameter parameter)
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ValidateAndBind(ConnectorTypeMapper typeMapper)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidCastException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateAndGetLength(DateTime value, NpgsqlParameter parameter)
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateObjectAndGetLength(Object value, NpgsqlLengthCache& lengthCache, NpgsqlParameter parameter)
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ValidateAndBind(ConnectorTypeMapper typeMapper)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-11 11:13:32.481 [ERR] Insert Exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidCastException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateAndGetLength(DateTime value, NpgsqlParameter parameter)
+   at Npgsql.Internal.TypeHandlers.DateTimeHandlers.TimestampTzHandler.ValidateObjectAndGetLength(Object value, NpgsqlLengthCache& lengthCache, NpgsqlParameter parameter)
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ValidateAndBind(ConnectorTypeMapper typeMapper)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at SimApi.Data.Uow.UnitOfWork.Complete() in C:\RepoRy\pk-sim\SimApi\SimApi.Data\UnitOfWork\UnitOfWork.cs:line 39
+   at SimApi.Operation.BaseService`3.Insert(TRequest request) in C:\RepoRy\pk-sim\SimApi\SimApi.Operation\Base\BaseService.cs:line 86
+2023-06-11 11:13:32.496 [INF] -------------Request-Begin------------
+2023-06-11 11:13:32.498 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"2023-05-21"}
+2023-06-11 11:13:32.500 [INF] 
+
+2023-06-11 11:13:32.501 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"An error occurred while saving the entity changes. See the inner exception for details."}
+2023-06-11 11:13:32.503 [INF] -------------Request-End------------
+2023-06-11 11:14:09.375 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:14:09.382 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:14:09.383 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:14:09.386 [INF] -------------Request-Begin------------
+2023-06-11 11:14:09.387 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"2023-05-21 10:58:46.377331"}
+2023-06-11 11:14:09.390 [INF] 
+
+2023-06-11 11:14:09.395 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 400 
+Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-269ac9a88df79fe7b27ae4b5515826af-157db3aba516d03b-00","errors":{"request":["The request field is required."],"$.dateOfBirth":["The JSON value could not be converted to System.DateTime. Path: $.dateOfBirth | LineNumber: 0 | BytePositionInLine: 105."]}
+2023-06-11 11:14:09.398 [INF] -------------Request-End------------
+2023-06-11 11:14:29.473 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:14:29.479 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:14:29.480 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:14:29.590 [INF] -------------Request-Begin------------
+2023-06-11 11:14:29.592 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"1989-06-11T08:14:00.297Z"}
+2023-06-11 11:14:29.594 [INF] 
+
+2023-06-11 11:14:29.595 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 11:14:29.596 [INF] -------------Request-End------------
+2023-06-11 11:14:45.513 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:14:45.514 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:14:45.516 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:14:45.526 [INF] -------------Request-Begin------------
+2023-06-11 11:14:45.527 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10002,"firstName":"10002","lastName":"10002","dateOfBirth":"1989-06-11T08:14:00.297Z"}
+2023-06-11 11:14:45.529 [INF] 
+
+2023-06-11 11:14:45.530 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 11:14:45.531 [INF] -------------Request-End------------
+2023-06-11 11:14:52.053 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:14:52.055 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:14:52.057 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:15:00.601 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-06-11 11:15:00.677 [INF] -------------Request-Begin------------
+2023-06-11 11:15:00.682 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: 
+2023-06-11 11:15:00.685 [INF] 
+
+2023-06-11 11:15:00.687 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"customerNumber":10001,"firstName":"10001","lastName":"10001","dateOfBirth":"1989-06-11T08:14:00.297Z","isValid":true,"accounts":[],"id":1},{"customerNumber":10002,"firstName":"10002","lastName":"10002","dateOfBirth":"1989-06-11T08:14:00.297Z","isValid":true,"accounts":[],"id":2}]}
+2023-06-11 11:15:00.689 [INF] -------------Request-End------------
+2023-06-11 11:15:36.839 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:15:36.870 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:15:36.876 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:15:37.172 [ERR] Failed executing DbCommand (75ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = DateTime), @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO dbo."Account" ("AccountNumber", "CreatedAt", "CreatedBy", "CurrencyId", "CustomerId", "Name", "OpenDate", "UpdatedAt", "UpdatedBy")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id", "Balance", "IsValid";
+2023-06-11 11:15:37.278 [ERR] An exception occurred in the database while saving changes for context type 'SimApi.Data.Context.SimEfDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Account" violates foreign key constraint "FK_Account_Currency_CurrencyId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Account" violates foreign key constraint "FK_Account_Currency_CurrencyId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: dbo
+    TableName: Account
+    ConstraintName: FK_Account_Currency_CurrencyId
+    File: ri_triggers.c
+    Line: 2539
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Account" violates foreign key constraint "FK_Account_Currency_CurrencyId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Account" violates foreign key constraint "FK_Account_Currency_CurrencyId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: dbo
+    TableName: Account
+    ConstraintName: FK_Account_Currency_CurrencyId
+    File: ri_triggers.c
+    Line: 2539
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-06-11 11:16:42.790 [INF] Application is starting...
+2023-06-11 11:16:55.291 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:16:55.304 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:16:55.307 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:17:03.942 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:17:03.967 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:17:05.375 [INF] -------------Request-Begin------------
+2023-06-11 11:17:05.378 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: 
+2023-06-11 11:17:05.381 [INF] 
+
+2023-06-11 11:17:05.382 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-11 11:17:05.383 [INF] -------------Request-End------------
+2023-06-11 11:17:33.627 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:17:33.628 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:17:33.629 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:17:34.133 [INF] -------------Request-Begin------------
+2023-06-11 11:17:34.135 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: {"currencyId":5,"customerId":1,"accountNumber":5001,"name":"5001"}
+2023-06-11 11:17:34.139 [INF] 
+
+2023-06-11 11:17:34.140 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 11:17:34.141 [INF] -------------Request-End------------
+2023-06-11 11:17:42.426 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:17:42.428 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:17:42.429 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:17:42.456 [INF] -------------Request-Begin------------
+2023-06-11 11:17:42.458 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: {"currencyId":5,"customerId":1,"accountNumber":5002,"name":"5002"}
+2023-06-11 11:17:42.460 [INF] 
+
+2023-06-11 11:17:42.462 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 11:17:42.464 [INF] -------------Request-End------------
+2023-06-11 11:17:52.843 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:17:52.844 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:17:52.846 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:17:52.853 [INF] -------------Request-Begin------------
+2023-06-11 11:17:52.861 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: {"currencyId":5,"customerId":2,"accountNumber":5003,"name":"5003"}
+2023-06-11 11:17:52.863 [INF] 
+
+2023-06-11 11:17:52.864 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 11:17:52.866 [INF] -------------Request-End------------
+2023-06-11 11:17:58.697 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:17:58.698 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:17:58.699 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:17:58.707 [INF] -------------Request-Begin------------
+2023-06-11 11:17:58.710 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: {"currencyId":5,"customerId":2,"accountNumber":5004,"name":"5004"}
+2023-06-11 11:17:58.712 [INF] 
+
+2023-06-11 11:17:58.714 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 11:17:58.716 [INF] -------------Request-End------------
+2023-06-11 11:18:04.316 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:18:04.318 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:18:04.319 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:18:08.596 [INF] -------------Request-Begin------------
+2023-06-11 11:18:08.598 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: 
+2023-06-11 11:18:08.599 [INF] 
+
+2023-06-11 11:18:08.601 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"customerId":1,"currencyId":5,"accountNumber":5001,"name":"5001","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":2},{"customerId":1,"currencyId":5,"accountNumber":5002,"name":"5002","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":3},{"customerId":2,"currencyId":5,"accountNumber":5003,"name":"5003","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":4},{"customerId":2,"currencyId":5,"accountNumber":5004,"name":"5004","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":5}]}
+2023-06-11 11:18:08.603 [INF] -------------Request-End------------
+2023-06-11 11:20:30.009 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:20:30.018 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:20:30.020 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:21:30.575 [INF] -------------Request-Begin------------
+2023-06-11 11:21:30.577 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+Request Body: {"accountId":2,"description":"2-desc","amount":2000}
+2023-06-11 11:21:30.582 [INF] 
+
+2023-06-11 11:21:30.583 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"referenceNumber":"7C1EBB981C","id":1}}
+2023-06-11 11:21:30.584 [INF] -------------Request-End------------
+2023-06-11 11:21:39.853 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:21:39.855 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:21:39.856 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:21:40.985 [INF] -------------Request-Begin------------
+2023-06-11 11:21:40.986 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+Request Body: {"accountId":2,"description":"2-desc","amount":5000}
+2023-06-11 11:21:40.987 [INF] 
+
+2023-06-11 11:21:40.989 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"referenceNumber":"25F8FF7A02","id":2}}
+2023-06-11 11:21:40.990 [INF] -------------Request-End------------
+2023-06-11 11:21:52.106 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:21:52.107 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:21:52.110 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:21:53.425 [INF] -------------Request-Begin------------
+2023-06-11 11:21:53.426 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Report2 
+QueryString:  
+Request Body: 
+2023-06-11 11:21:53.427 [INF] 
+
+2023-06-11 11:21:53.429 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Report2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"currencyCode":null,"accountId":2,"amount":2000.00,"direction":0,"transactionDate":"2023-06-11T08:21:23.216559Z","description":"2-desc","referenceNumber":"7C1EBB981C","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":1},{"currencyCode":null,"accountId":2,"amount":5000.00,"direction":0,"transactionDate":"2023-06-11T08:21:40.983686Z","description":"2-desc","referenceNumber":"25F8FF7A02","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":2}]}
+2023-06-11 11:21:53.431 [INF] -------------Request-End------------
+2023-06-11 11:22:31.323 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:22:31.343 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:22:31.347 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:22:31.396 [INF] -------------Request-Begin------------
+2023-06-11 11:22:31.397 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Report1 
+QueryString:  
+Request Body: 
+2023-06-11 11:22:31.399 [INF] 
+
+2023-06-11 11:22:31.400 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Report1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Cannot create a DbSet for 'TransactionView' because this type is not included in the model for the context.","response":null}
+2023-06-11 11:22:31.401 [INF] -------------Request-End------------
+2023-06-11 11:23:38.044 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:23:38.055 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:23:38.056 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:23:41.503 [INF] -------------Request-Begin------------
+2023-06-11 11:23:41.505 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 11:23:41.507 [INF] 
+
+2023-06-11 11:23:41.508 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"currencyCode":"ZWD","accountId":2,"amount":2000.00,"direction":0,"transactionDate":"2023-06-11T08:21:23.216559Z","description":"2-desc","referenceNumber":"7C1EBB981C","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":1},{"currencyCode":"ZWD","accountId":2,"amount":5000.00,"direction":0,"transactionDate":"2023-06-11T08:21:40.983686Z","description":"2-desc","referenceNumber":"25F8FF7A02","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":2}]}
+2023-06-11 11:23:41.511 [INF] -------------Request-End------------
+2023-06-11 11:23:48.480 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:23:48.482 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:23:48.483 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:23:50.156 [INF] -------------Request-Begin------------
+2023-06-11 11:23:50.158 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 11:23:50.159 [INF] 
+
+2023-06-11 11:23:50.160 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"currencyCode":"ZWD","accountId":2,"amount":2000.00,"direction":0,"transactionDate":"2023-06-11T08:21:23.216559Z","description":"2-desc","referenceNumber":"7C1EBB981C","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":1},{"currencyCode":"ZWD","accountId":2,"amount":5000.00,"direction":0,"transactionDate":"2023-06-11T08:21:40.983686Z","description":"2-desc","referenceNumber":"25F8FF7A02","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":2}]}
+2023-06-11 11:23:50.162 [INF] -------------Request-End------------
+2023-06-11 11:24:31.153 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:24:31.169 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:24:31.170 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:25:18.322 [INF] -------------Request-Begin------------
+2023-06-11 11:25:18.324 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Transfer 
+QueryString:  
+Request Body: {"fromAccountId":3,"toAccountId":4,"amount":3000,"description":"3k"}
+2023-06-11 11:25:18.326 [INF] 
+
+2023-06-11 11:25:18.328 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Transfer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Insufficent balance","response":null}
+2023-06-11 11:25:18.329 [INF] -------------Request-End------------
+2023-06-11 11:25:25.143 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:25:25.144 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:25:25.145 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:25:26.651 [INF] -------------Request-Begin------------
+2023-06-11 11:25:26.652 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: 
+2023-06-11 11:25:26.654 [INF] 
+
+2023-06-11 11:25:26.656 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"customerId":1,"currencyId":5,"accountNumber":5001,"name":"5001","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":2},{"customerId":1,"currencyId":5,"accountNumber":5002,"name":"5002","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":3},{"customerId":2,"currencyId":5,"accountNumber":5003,"name":"5003","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":4},{"customerId":2,"currencyId":5,"accountNumber":5004,"name":"5004","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":5}]}
+2023-06-11 11:25:26.658 [INF] -------------Request-End------------
+2023-06-11 11:26:30.593 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:26:30.608 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:26:30.609 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:27:42.686 [INF] -------------Request-Begin------------
+2023-06-11 11:27:42.688 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+Request Body: {"accountId":2,"description":"5000 key","amount":5000}
+2023-06-11 11:27:42.689 [INF] 
+
+2023-06-11 11:27:42.691 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"referenceNumber":"8FF7CDB256","id":3}}
+2023-06-11 11:27:42.692 [INF] -------------Request-End------------
+2023-06-11 11:28:06.400 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:28:06.402 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:28:06.403 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:28:07.757 [INF] -------------Request-Begin------------
+2023-06-11 11:28:07.758 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+Request Body: {"accountId":2,"description":"string","amount":9000}
+2023-06-11 11:28:07.760 [INF] 
+
+2023-06-11 11:28:07.761 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"referenceNumber":"95867D5252","id":4}}
+2023-06-11 11:28:07.763 [INF] -------------Request-End------------
+2023-06-11 11:28:15.457 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:28:15.458 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:28:15.460 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:28:21.845 [INF] -------------Request-Begin------------
+2023-06-11 11:28:21.846 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: 
+2023-06-11 11:28:21.848 [INF] 
+
+2023-06-11 11:28:21.849 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"customerId":1,"currencyId":5,"accountNumber":5002,"name":"5002","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":3},{"customerId":2,"currencyId":5,"accountNumber":5003,"name":"5003","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":4},{"customerId":2,"currencyId":5,"accountNumber":5004,"name":"5004","openDate":"0001-01-01T00:00:00","balance":0.00,"isValid":true,"transactions":[],"id":5},{"customerId":1,"currencyId":5,"accountNumber":5001,"name":"5001","openDate":"0001-01-01T00:00:00","balance":9000.00,"isValid":true,"transactions":[],"id":2}]}
+2023-06-11 11:28:21.852 [INF] -------------Request-End------------
+2023-06-11 11:28:50.034 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:28:50.040 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:28:50.041 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:29:20.406 [INF] -------------Request-Begin------------
+2023-06-11 11:29:20.408 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Transfer 
+QueryString:  
+Request Body: {"fromAccountId":2,"toAccountId":3,"amount":500,"description":"string"}
+2023-06-11 11:29:20.409 [INF] 
+
+2023-06-11 11:29:20.411 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Transfer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"referenceNumber":"DC9C836961","id":0}}
+2023-06-11 11:29:20.412 [INF] -------------Request-End------------
+2023-06-11 11:29:30.150 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:29:30.151 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:29:30.153 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:29:33.256 [INF] -------------Request-Begin------------
+2023-06-11 11:29:33.258 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/ByReferenceNumber 
+QueryString: ?referenceNumber=DC9C836961 
+Request Body: 
+2023-06-11 11:29:33.259 [INF] 
+
+2023-06-11 11:29:33.260 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/ByReferenceNumber 
+QueryString: ?referenceNumber=DC9C836961 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"currencyCode":"ZWD","accountId":3,"amount":500.00,"direction":0,"transactionDate":"2023-06-11T08:29:12.422592Z","description":"string","referenceNumber":"DC9C836961","transactionCode":"TRANSF","id":5},{"currencyCode":"ZWD","accountId":2,"amount":500.00,"direction":1,"transactionDate":"2023-06-11T08:29:17.020699Z","description":"string","referenceNumber":"DC9C836961","transactionCode":"TRANSF","id":6}]}
+2023-06-11 11:29:33.262 [INF] -------------Request-End------------
+2023-06-11 11:30:21.915 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:30:21.917 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:30:21.919 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:30:43.967 [INF] Application is starting...
+2023-06-11 11:31:03.541 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 11:31:03.546 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 11:31:03.549 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 11:31:08.099 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:31:08.106 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 11:31:13.207 [INF] -------------Request-Begin------------
+2023-06-11 11:31:13.209 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Report1 
+QueryString:  
+Request Body: 
+2023-06-11 11:31:13.210 [INF] 
+
+2023-06-11 11:31:13.211 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Report1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"currencyCode":"ZWD","accountId":2,"amount":2000.00,"direction":0,"transactionDate":"2023-06-11T08:21:23.216559Z","description":"2-desc","referenceNumber":"7C1EBB981C","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":1},{"currencyCode":"ZWD","accountId":2,"amount":5000.00,"direction":0,"transactionDate":"2023-06-11T08:21:40.983686Z","description":"2-desc","referenceNumber":"25F8FF7A02","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":2},{"currencyCode":"ZWD","accountId":2,"amount":5000.00,"direction":0,"transactionDate":"2023-06-11T08:27:42.637169Z","description":"5000 key","referenceNumber":"8FF7CDB256","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":3},{"currencyCode":"ZWD","accountId":2,"amount":9000.00,"direction":0,"transactionDate":"2023-06-11T08:28:07.738011Z","description":"string","referenceNumber":"95867D5252","transactionCode":"DEPOSIT","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":4},{"currencyCode":"ZWD","accountId":3,"amount":500.00,"direction":0,"transactionDate":"2023-06-11T08:29:12.422592Z","description":"string","referenceNumber":"DC9C836961","transactionCode":"TRANSF","customerId":1,"accountNumber":5002,"accountName":"5002","customerNumber":10001,"firstName":"10001","lastName":"10001","id":5},{"currencyCode":"ZWD","accountId":2,"amount":500.00,"direction":1,"transactionDate":"2023-06-11T08:29:17.020699Z","description":"string","referenceNumber":"DC9C836961","transactionCode":"TRANSF","customerId":1,"accountNumber":5001,"accountName":"5001","customerNumber":10001,"firstName":"10001","lastName":"10001","id":6}]}
+2023-06-11 11:31:13.216 [INF] -------------Request-End------------
+2023-06-11 13:47:06.451 [INF] Application is starting...
+2023-06-11 13:47:10.373 [INF] Start installing Hangfire SQL objects...
+2023-06-11 13:47:11.594 [INF] Hangfire SQL objects installed.
+2023-06-11 13:47:13.121 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: simjob, Schema: hangfire'
+2023-06-11 13:47:13.123 [INF] Using the following options for SQL Server job storage:
+2023-06-11 13:47:13.124 [INF]     Queue poll interval: 00:10:00.
+2023-06-11 13:47:13.125 [INF]     Invisibility timeout: 00:05:00.
+2023-06-11 13:47:13.126 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 13:47:13.150 [DBG] Execution loop BackgroundServerProcess:6298ee18 has started in 15.2317 ms
+2023-06-11 13:47:13.165 [VRB] Server dxxb:20612:ab759348 is announcing itself...
+2023-06-11 13:47:13.728 [INF] Server dxxb:20612:ab759348 successfully announced in 550.7555 ms
+2023-06-11 13:47:14.803 [DBG] Execution loop ServerHeartbeatProcess:11fdbd43 has started in 112.586 ms
+2023-06-11 13:47:14.812 [INF] Server dxxb:20612:ab759348 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 13:47:14.896 [DBG] Execution loop ServerWatchdog:7dadf160 has started in 70.3047 ms
+2023-06-11 13:47:14.911 [VRB] Server dxxb:20612:ab759348 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:47:14.921 [DBG] Execution loop ServerJobCancellationWatcher:c657b4f4 has started in 55.0545 ms
+2023-06-11 13:47:14.927 [VRB] Checking for aborted jobs...
+2023-06-11 13:47:14.933 [VRB] No newly aborted jobs found.
+2023-06-11 13:47:14.944 [DBG] Execution loop ExpirationManager:830db012 has started in 33.2455 ms
+2023-06-11 13:47:14.950 [DBG] Execution loop CountersAggregator:9063adaa has started in 17.3921 ms
+2023-06-11 13:47:14.960 [DBG] Execution loop Worker:e20c9bbb has started in 15.9935 ms
+2023-06-11 13:47:14.968 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 13:47:14.970 [DBG] Removing outdated records from table 'aggregatedcounter'...
+2023-06-11 13:47:14.966 [DBG] Execution loop Worker:43534efb has started in 22.6117 ms
+2023-06-11 13:47:14.993 [DBG] Execution loop Worker:20fe5b42 has started in 49.1282 ms
+2023-06-11 13:47:15.006 [VRB] Records from the 'Counter' table aggregated.
+2023-06-11 13:47:15.097 [DBG] Execution loop Worker:e02a7c14 has started in 153.1691 ms
+2023-06-11 13:47:15.189 [DBG] Execution loop Worker:8bd6d604 has started in 245.1006 ms
+2023-06-11 13:47:15.216 [DBG] Execution loop Worker:0c8a896a has started in 272.1364 ms
+2023-06-11 13:47:15.300 [DBG] Execution loop Worker:80ca2152 has started in 355.9442 ms
+2023-06-11 13:47:15.379 [DBG] Removing outdated records from table 'counter'...
+2023-06-11 13:47:15.378 [DBG] Execution loop Worker:58cbf11d has started in 434.5377 ms
+2023-06-11 13:47:15.402 [DBG] Execution loop Worker:1c83b2d1 has started in 458.4097 ms
+2023-06-11 13:47:15.413 [DBG] Execution loop Worker:09fff4a2 has started in 468.8557 ms
+2023-06-11 13:47:15.468 [DBG] Execution loop Worker:0d868ec5 has started in 513.2871 ms
+2023-06-11 13:47:15.556 [DBG] Execution loop Worker:188e0272 has started in 612.196 ms
+2023-06-11 13:47:15.583 [DBG] Removing outdated records from table 'job'...
+2023-06-11 13:47:15.596 [DBG] Removing outdated records from table 'list'...
+2023-06-11 13:47:15.596 [DBG] Execution loop Worker:b9c1d05a has started in 652.4921 ms
+2023-06-11 13:47:15.612 [DBG] Execution loop Worker:517873ff has started in 668.4604 ms
+2023-06-11 13:47:15.615 [DBG] Removing outdated records from table 'set'...
+2023-06-11 13:47:15.632 [DBG] Execution loop Worker:00468f60 has started in 688.4251 ms
+2023-06-11 13:47:15.639 [DBG] Execution loop Worker:7e7ef8d2 has started in 695.4288 ms
+2023-06-11 13:47:15.656 [DBG] Removing outdated records from table 'hash'...
+2023-06-11 13:47:15.648 [DBG] Execution loop Worker:291c04f9 has started in 704.5845 ms
+2023-06-11 13:47:15.662 [DBG] Execution loop Worker:6b019b30 has started in 718.5141 ms
+2023-06-11 13:47:15.684 [INF] Server dxxb:20612:ab759348 all the dispatchers started
+2023-06-11 13:47:15.669 [DBG] Execution loop Worker:ec307861 has started in 725.767 ms
+2023-06-11 13:47:15.677 [DBG] Execution loop Worker:764ef67d has started in 733.2352 ms
+2023-06-11 13:47:15.684 [DBG] Execution loop DelayedJobScheduler:9a853379 has started in 14.9362 ms
+2023-06-11 13:47:15.694 [DBG] Execution loop RecurringJobScheduler:de8eb4a3 has started in 15.4081 ms
+2023-06-11 13:47:19.952 [VRB] Checking for aborted jobs...
+2023-06-11 13:47:19.954 [VRB] No newly aborted jobs found.
+2023-06-11 13:47:24.957 [VRB] Checking for aborted jobs...
+2023-06-11 13:47:24.958 [VRB] No newly aborted jobs found.
+2023-06-11 13:47:29.961 [VRB] Checking for aborted jobs...
+2023-06-11 13:47:29.962 [VRB] No newly aborted jobs found.
+2023-06-11 13:47:35.044 [VRB] Checking for aborted jobs...
+2023-06-11 13:47:35.050 [VRB] No newly aborted jobs found.
+2023-06-11 13:51:27.899 [INF] Application is starting...
+2023-06-11 13:51:30.601 [INF] Start installing Hangfire SQL objects...
+2023-06-11 13:51:30.762 [INF] Hangfire SQL objects installed.
+2023-06-11 13:51:31.219 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: simjob, Schema: hangfire'
+2023-06-11 13:51:31.221 [INF] Using the following options for SQL Server job storage:
+2023-06-11 13:51:31.222 [INF]     Queue poll interval: 00:10:00.
+2023-06-11 13:51:31.223 [INF]     Invisibility timeout: 00:05:00.
+2023-06-11 13:51:31.224 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-06-11 13:51:31.246 [DBG] Execution loop BackgroundServerProcess:a8e3bf5d has started in 13.5726 ms
+2023-06-11 13:51:31.261 [VRB] Server dxxb:8716:9de25ec5 is announcing itself...
+2023-06-11 13:51:31.585 [INF] Server dxxb:8716:9de25ec5 successfully announced in 322.2788 ms
+2023-06-11 13:51:31.594 [DBG] Execution loop ServerHeartbeatProcess:48b0605c has started in 5.4691 ms
+2023-06-11 13:51:31.595 [INF] Server dxxb:8716:9de25ec5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-06-11 13:51:31.602 [DBG] Execution loop ServerWatchdog:aeb8d772 has started in 4.9287 ms
+2023-06-11 13:51:31.605 [DBG] Execution loop ServerJobCancellationWatcher:80be9570 has started in 7.6552 ms
+2023-06-11 13:51:31.611 [DBG] Execution loop ExpirationManager:0e55ad1b has started in 4.8362 ms
+2023-06-11 13:51:31.620 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:51:31.623 [VRB] Checking for aborted jobs...
+2023-06-11 13:51:31.633 [DBG] Removing outdated records from table 'aggregatedcounter'...
+2023-06-11 13:51:31.659 [VRB] No newly aborted jobs found.
+2023-06-11 13:51:31.614 [DBG] Execution loop CountersAggregator:c166b3e3 has started in 8.0364 ms
+2023-06-11 13:51:31.620 [DBG] Execution loop Worker:e2759b9e has started in 9.9075 ms
+2023-06-11 13:51:31.728 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 13:51:31.623 [DBG] Execution loop Worker:0da90ff4 has started in 12.408 ms
+2023-06-11 13:51:31.844 [DBG] Removing outdated records from table 'counter'...
+2023-06-11 13:51:31.861 [VRB] Records from the 'Counter' table aggregated.
+2023-06-11 13:51:32.371 [INF] Server dxxb:8716:9de25ec5 all the dispatchers started
+2023-06-11 13:51:31.628 [DBG] Execution loop Worker:21268119 has started in 17.1352 ms
+2023-06-11 13:51:31.633 [DBG] Execution loop Worker:0d0c1889 has started in 22.5253 ms
+2023-06-11 13:51:31.637 [DBG] Execution loop Worker:54f3478b has started in 26.3496 ms
+2023-06-11 13:51:31.642 [DBG] Execution loop Worker:f239bef5 has started in 31.8531 ms
+2023-06-11 13:51:31.646 [DBG] Execution loop Worker:4ccfe175 has started in 35.9394 ms
+2023-06-11 13:51:31.649 [DBG] Execution loop Worker:df1271ab has started in 38.3498 ms
+2023-06-11 13:51:32.763 [DBG] Removing outdated records from table 'job'...
+2023-06-11 13:51:31.654 [DBG] Execution loop Worker:4360d954 has started in 43.9941 ms
+2023-06-11 13:51:31.666 [DBG] Execution loop Worker:f16a1600 has started in 55.5135 ms
+2023-06-11 13:51:31.671 [DBG] Execution loop Worker:0ed32e80 has started in 60.1496 ms
+2023-06-11 13:51:31.685 [DBG] Execution loop Worker:d5febe3d has started in 74.9386 ms
+2023-06-11 13:51:31.698 [DBG] Execution loop Worker:6e8ef196 has started in 87.247 ms
+2023-06-11 13:51:32.788 [DBG] Removing outdated records from table 'list'...
+2023-06-11 13:51:31.713 [DBG] Execution loop Worker:e676d3e8 has started in 102.6145 ms
+2023-06-11 13:51:31.731 [DBG] Execution loop Worker:bc52633a has started in 120.3544 ms
+2023-06-11 13:51:31.789 [DBG] Execution loop Worker:858f42c5 has started in 178.8223 ms
+2023-06-11 13:51:32.882 [DBG] Removing outdated records from table 'set'...
+2023-06-11 13:51:31.840 [DBG] Execution loop Worker:249bada8 has started in 229.4633 ms
+2023-06-11 13:51:32.192 [DBG] Execution loop Worker:0af30bf8 has started in 581.9499 ms
+2023-06-11 13:51:32.266 [DBG] Execution loop Worker:46a58255 has started in 655.0245 ms
+2023-06-11 13:51:32.318 [DBG] Execution loop Worker:756c2b83 has started in 707.823 ms
+2023-06-11 13:51:32.368 [DBG] Execution loop DelayedJobScheduler:c96f7bb1 has started in 78.7629 ms
+2023-06-11 13:51:32.481 [DBG] Execution loop RecurringJobScheduler:27c64395 has started in 141.8736 ms
+2023-06-11 13:51:32.926 [DBG] Removing outdated records from table 'hash'...
+2023-06-11 13:51:36.701 [VRB] Checking for aborted jobs...
+2023-06-11 13:51:36.836 [VRB] No newly aborted jobs found.
+2023-06-11 13:51:40.607 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 13:51:40.612 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 13:51:40.615 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 13:51:42.999 [VRB] Checking for aborted jobs...
+2023-06-11 13:51:44.765 [VRB] No newly aborted jobs found.
+2023-06-11 13:51:47.208 [INF] -------------Request-Begin------------
+2023-06-11 13:51:47.210 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/CurrencyJob/Update 
+QueryString:  
+Request Body: 
+2023-06-11 13:51:47.211 [INF] 
+
+2023-06-11 13:51:47.212 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/CurrencyJob/Update 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-11 13:51:47.214 [INF] -------------Request-End------------
+2023-06-11 13:51:49.780 [VRB] Checking for aborted jobs...
+2023-06-11 13:51:49.783 [VRB] No newly aborted jobs found.
+2023-06-11 13:51:53.786 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 13:51:53.787 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 13:51:53.788 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 13:51:53.791 [INF] -------------Request-Begin------------
+2023-06-11 13:51:53.793 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /han 
+QueryString:  
+Request Body: 
+2023-06-11 13:51:53.796 [INF] 
+
+2023-06-11 13:51:53.798 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /han 
+QueryString:  
+StatusCode: 404 
+Response Body: 
+2023-06-11 13:51:53.799 [INF] -------------Request-End------------
+2023-06-11 13:51:54.796 [VRB] Checking for aborted jobs...
+2023-06-11 13:51:54.797 [VRB] No newly aborted jobs found.
+2023-06-11 13:51:59.816 [VRB] Checking for aborted jobs...
+2023-06-11 13:51:59.818 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:01.653 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:52:01.656 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:52:04.823 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:04.825 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:09.827 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:09.828 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:14.831 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:14.832 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:19.835 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:19.837 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:24.839 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:24.841 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:29.843 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:29.844 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:31.663 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:52:31.664 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:52:34.847 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:34.848 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:39.850 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:39.851 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:44.852 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:44.854 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:49.856 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:49.857 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:54.862 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:54.863 [VRB] No newly aborted jobs found.
+2023-06-11 13:52:59.863 [VRB] Checking for aborted jobs...
+2023-06-11 13:52:59.864 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:01.667 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:53:01.668 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:53:04.867 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:04.868 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:09.888 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:09.889 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:14.893 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:14.895 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:19.896 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:19.897 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:24.899 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:24.900 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:29.903 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:29.904 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:31.674 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:53:31.675 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:53:34.905 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:34.907 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:39.908 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:39.909 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:44.911 [VRB] Checking for aborted jobs...
+2023-06-11 13:53:44.912 [VRB] No newly aborted jobs found.
+2023-06-11 13:53:48.091 [DBG] 1 scheduled job(s) processed by scheduler.
+2023-06-11 13:53:59.529 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:00.467 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:01.430 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 13:54:01.433 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 13:54:01.679 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:54:01.681 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:54:09.357 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:09.359 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:14.369 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:14.371 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:19.390 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:19.396 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:24.400 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:24.401 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:29.402 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:29.403 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:31.688 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:54:31.689 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:54:34.407 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:34.412 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:42.039 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:43.367 [VRB] No newly aborted jobs found.
+2023-06-11 13:54:50.362 [VRB] Checking for aborted jobs...
+2023-06-11 13:54:50.370 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:01.147 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:01.172 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:01.697 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:55:01.698 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:55:06.195 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:06.199 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:11.201 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:11.202 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:16.204 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:16.207 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:21.207 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:21.208 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:26.209 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:26.210 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:31.214 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:31.215 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:31.705 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:55:31.706 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:55:36.218 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:36.219 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:41.219 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:41.221 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:46.225 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:46.226 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:51.231 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:51.232 [VRB] No newly aborted jobs found.
+2023-06-11 13:55:56.234 [VRB] Checking for aborted jobs...
+2023-06-11 13:55:56.235 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:01.237 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:01.238 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:01.714 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:56:01.715 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:56:06.240 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:06.241 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:11.244 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:11.245 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:16.248 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:16.249 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:21.251 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:21.252 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:26.254 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:26.255 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:31.257 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:31.258 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:31.648 [INF] 1 servers were removed due to timeout
+2023-06-11 13:56:31.721 [DBG] Server dxxb:8716:9de25ec5 heartbeat successfully sent
+2023-06-11 13:56:31.722 [VRB] Server dxxb:8716:9de25ec5 waiting for 00:00:30 delay before sending a heartbeat
+2023-06-11 13:56:32.394 [DBG] Aggregating records in 'Counter' table...
+2023-06-11 13:56:32.400 [VRB] Records from the 'Counter' table aggregated.
+2023-06-11 13:56:36.261 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:36.262 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:41.264 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:41.265 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:46.267 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:46.268 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:51.269 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:51.271 [VRB] No newly aborted jobs found.
+2023-06-11 13:56:56.276 [VRB] Checking for aborted jobs...
+2023-06-11 13:56:56.277 [VRB] No newly aborted jobs found.

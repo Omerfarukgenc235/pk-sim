@@ -13,6 +13,9 @@ public static class ServiceExtension
         services.AddScoped<ICustomerService, CustomerService>();
         services.AddScoped<IAccountService, AccountService>();
         services.AddScoped<ITransactionService, TransactionService>();
+        services.AddScoped<ICurrencyService, CurrencyService>();
+        services.AddSingleton<IRedisService, RedisService>();
+        services.AddSingleton<INotificationService, NotificationService>();
 
         services.AddScoped<ITransactionReportService, TransactionReportService>();
         services.AddScoped<IDapperAccountService, DapperAccountService>();
